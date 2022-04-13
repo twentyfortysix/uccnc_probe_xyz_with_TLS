@@ -7,7 +7,7 @@ https://youtu.be/X_vFmEGCen4
 The TLS (Tool length sensor) is normally used for the Z height probing.
 As the TLS is just a plain sensor which sends coordinates anytime it is touched it can be easily used for other axes right?
 
-The changes in the probing macro is not big deal.. see the code and comments
+The changes in the probing macro is not big deal.. see the code and comments. <br>
 What you need in order turn this concept to reality, is:
 - a probe tool. Some kind of screew or something with stopper that defines its length.
 - Measure the length and the "probe tool" diameter.
