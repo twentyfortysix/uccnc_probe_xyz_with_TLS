@@ -11,7 +11,7 @@ while(exec.IsMoving()){}
 if (!AS3.Getcheckboxstate(600))
 {
 DialogResult result;
-result = MessageBox.Show("Probe X and Y. Make sure to place the probe 40 mm or less from the edges of the corner and above the workpiece.", "Important!" , MessageBoxButtons.OKCancel);
+result = MessageBox.Show("Probe XYZ. Make sure that you have enough room for both the TLS and the 'probe tool'.", "Important!" , MessageBoxButtons.OKCancel);
 if (result == System.Windows.Forms.DialogResult.Cancel)
 {
 MessageBox.Show("Move the probe and execute the macro again");
@@ -126,7 +126,7 @@ exec.Code("M214");
 if(!exec.Ismacrostopped())
 {
 exec.Wait(200); 
-MessageBox.Show("Probing done. Check the machine coordinates to get the coordinates of the corner. Remember the 1 mm offset in Z direction!");
+MessageBox.Show("Probing done. Remember the 1 mm offset in Z direction!");
 exec.Code("M214");
 }
 else
